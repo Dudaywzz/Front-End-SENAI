@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Estrutura Básica de Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* Estilos do Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: darkblue;
+        }
+
+        nav .logo {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Estilos do container de texto e imagem */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .content .text {
+            width: 50%;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .content .image {
+            width: 50%;
+        }
+
+        .content .image img {
+            width: 80%;
+        }
+
+        /* Estilos do container de cards */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .card {
+            width: 30%;
+            border: 1px solid #acabab;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: darkblue;
+        }
+
+        .card img {
+            width: 20%;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            padding: 15px;
+        }
+
+        .card p {
+            padding: 0 15px 15px 15px;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo"><img src="logo-marca.png" width="100px" height="50px"></div>
+    <ul>
+        <li><a href="http://localhost:63342/Front-End-SENAI/home.html?_ijt=35929saa1gbs57i071i6c9f404">Home</a></li>
+        <li><a href="http://localhost:63342/Front-End-SENAI/Sobre.html?_ijt=35929saa1gbs57i071i6c9f404">Sobre</a></li>
+        <li><a href="http://localhost:63342/Front-End-SENAI/Servi%C3%A7o.html?_ijt=35929saa1gbs57i071i6c9f404">Serviços</a></li>
+        <li><a href="http://localhost:63342/Front-End-SENAI/Time.html?_ijt=35929saa1gbs57i071i6c9f404">Time</a></li>
+        <li><a href="http://localhost:63342/Front-End-SENAI/Contato.html?_ijt=6a1b16ajph0pov7h747c4bccvr">Contato</a></li>
+    </ul>
+
+</nav>
+
+<!-- Container com metade texto e metade imagem -->
+<div class="content">
+    <div class="text">
+        <h1 id="titulo" onmousedown="testTexto()" onmouseup="reset()" onmouseover="testColor()">Bem-Vindo ao Nosso Site!</h1>
+        <p>Realize agora mesmo o seu sonho de ter um aparelho celular rápido e com boa câmera.
+            Aqui na Samsung nós trabalhamos somente com as melhores aparelhos!
+            E sabe o que é melhor? Com os melhores preços!<br>
+            Venha fazer uma visita e confira todas as condições!
+            Até 49% off + benefícios que te garantem a melhor compra</p>
+        <form>
+            <label>
+                Label
+                <input id="input" onmouseover="testInput()">
+            </label>
+        </form>
+    </div>
+    <div class="image">
+        <img src="celular.bonito.png" alt="Exemplo de imagem" width="70px" height="480px">
+    </div>
+</div>
+
+<!-- Container com 3 cards -->
+<div class="cards">
+    <div class="card">
+        <img src="alto-falante.png" alt="Imagem do Card 1">
+        <h3>Promoções</h3>
+        <p>Fique atentos as nossas variedades de promoções</p>
+    </div>
+    <div class="card">
+        <img src="telefone.png" alt="Imagem do Card 2">
+        <h3>Contato</h3>
+        <p>Fale conosco por telefone</p>
+    </div>
+    <div class="card">
+        <img src="mensagem.png" alt="Imagem do Card 3">
+        <h3>Relatar problemas</h3>
+        <p>Relate aqui seu problema e deixe um comentario de melhora</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+</footer>
+<script src="Exemplo.js"></script>
+</body>
+</html>
